@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -6,21 +7,25 @@
  */
 int main(void)
 {
-	int n, m;
+	int number1 = 48;
+	int number2 = 48;
 
-	for (n = 48; n <= 57; n++)
+	while (number1 <= 57)
 	{
-		for (m = 48; m <= 57; m++)
+		while (number2 <= 57)
 		{
-			putchar(n);
-			putchar(m);
-			if (n != 57 || m != 57)
+			putchar(number1);
+			putchar(number2);
+			if (number1 != 57 || number2 != 57)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+			number2++;
 		}
+		number2 = 48;
+		number1++;
 	}
 	putchar('\n');
-	return (0);
+return (0);
 }

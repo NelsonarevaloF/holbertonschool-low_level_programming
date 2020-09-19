@@ -6,17 +6,19 @@
  */
 int main(void)
 {
-	int n;
-	char ch;
+	char hexadecimal = '0';
 
-	for (n = 48; n < 58; n++)
+	while (hexadecimal <= '9')
 	{
-		putchar(n);
+		putchar(hexadecimal);
+		hexadecimal++;
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
+	hexadecimal = 'a';
+	while (hexadecimal <= 'f')
 	{
-		putchar(ch);
+		putchar(hexadecimal);
+		hexadecimal++;
 	}
 	putchar('\n');
-	return (0);
+return (0);
 }
