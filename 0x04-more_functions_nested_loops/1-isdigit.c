@@ -3,7 +3,7 @@
 /**
  * _isdigit - check if a character is number
  * @c: character to evaluate
- * Return: Returns 1 if c is a digit 
+ * Return: Returns 1 if c is a digit
  * Returns 0 otherwise
  */
 
