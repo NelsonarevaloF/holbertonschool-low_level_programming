@@ -9,13 +9,8 @@
 
 void reverse_array(int *a, int n)
 {
-	int cont = 0, i, j;
-	char temporal = 0;
-
-	while (a[cont] != '\0')
-	{
-		cont++;
-	}
+	int i, j;
+	int temporal = 0;
 
 	for (i = 0, j = n - 1; i < n / 2; i++, j--)
 	{
