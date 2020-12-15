@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - returns the nth node of a linked list.
- * @head: pointer to the head
- * @index: the nth node that will be return
- * Return: a node
+ * insert_dnodeint_at_index -  inserts a new node at a given position
+ * @h: pointer to head
+ * @idx: index when we are going to insert a new node
+ * @n: date to insert
+ * Return: new node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
@@ -22,6 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			if (cont == idx)
 			{
 				dlistint_t *new = malloc(sizeof(dlistint_t));
+
 				if (new != NULL)
 				{
 					new->n = n;
