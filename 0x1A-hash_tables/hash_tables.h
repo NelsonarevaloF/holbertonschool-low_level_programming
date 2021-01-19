@@ -41,5 +41,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 char *_strdup(char *src);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
+char *hash_table_get(const hash_table_t *ht, const char *key);
 
 #endif
