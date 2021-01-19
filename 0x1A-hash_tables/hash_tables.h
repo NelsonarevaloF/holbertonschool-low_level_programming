@@ -42,5 +42,8 @@ char *_strdup(char *src);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
+hash_node_t *search_nodes(hash_node_t **array, unsigned long int size);
+int add_node_end(hash_node_t **head, char *key, char *value);
 
 #endif
