@@ -7,9 +7,9 @@ void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *aux = NULL;
 
-	printf("{");
 	if (ht && ht->array)
 	{
+		printf("{");
 		aux = search_nodes(ht->array, ht->size);
 		while (aux)
 		{
@@ -18,8 +18,8 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", ");
 			aux = aux->next;
 		}
+		printf("}\n");
 	}
-	printf("}\n");
 }
 /**
  * search_nodes - search the nodes fill
