@@ -1,0 +1,3 @@
+#0. make -f 0-Makefile
+make a executable:
+	gcc main.c holberton.c -o holberton
